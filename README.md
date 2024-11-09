@@ -18,6 +18,7 @@ This project is a simple API for creating, retrieving, updating, and deleting (C
 ### Purpose of the project
 
 The goal of this project is to create an API that allows you to interact with clients through web requests. You can create new customers, get a list of all customers, edit information and delete records.
+ 
 
 ### Technologies
 
