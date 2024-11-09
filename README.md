@@ -9,25 +9,62 @@
 
 ## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as...
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Laravel Client CRUD API
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+This project is a simple API for creating, retrieving, updating, and deleting (CRUD) customer information. It is built using the Laravel framework and connected to a PostgreSQL database.
 
-## Learning Laravel
+### Purpose of the project
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+The goal of this project is to create an API that allows you to interact with clients through web requests. You can create new customers, get a list of all customers, edit information and delete records.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Technologies
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Laravel** (version 8.x or higher)
+- **PostgreSQL** for data storage
+- **Composer** for dependency management
+- **PHP** (7.x or higher)
+
+### Installation
+
+1. **Repository cloning**
+   First clone this repository:
+    ```bash
+    git clone https://github.com/ViktorKernytskyi/laravel-client-crud-api.git
+    cd laravel-client-crud-api
+    ```
+
+2. **Dependencies installation**
+   Run Composer to install the dependencies:
+    ```bash
+    composer install
+    ```
+
+3. **Set up the environment**
+   Copy `.env.example` to `.env`:
+    ```bash
+    cp .env.example .env
+    ```
+
+   Set your PostgreSQL credentials in the `.env` file.
+
+4. **Generate the application key**
+    ```bash
+    php artisan key:generate
+    ```
+
+5. **Run migrations**
+    ```bash
+    php artisan migrate
+    ```
+
+6. **Start the development server**
+    ```bash
+    php artisan serve
+    ```
+
+Now your API should be accessible at `http://localhost:8000`.
 
 ## Laravel Sponsors
 
@@ -64,4 +101,3 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# laravel-client-crud-api
