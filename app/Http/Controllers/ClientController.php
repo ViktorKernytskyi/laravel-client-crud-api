@@ -15,7 +15,7 @@ class ClientController extends Controller
          *we use with('orders') because it allows you to retrieve all orders for each customer in one request,
          * which optimizes work with the database and reduces the number of requests.
          */
-
+dd("12222", $clients);
         $clients = Client::with('orders')->get(); // We receive all customers together with their orders
 
         return response()->json($clients);
